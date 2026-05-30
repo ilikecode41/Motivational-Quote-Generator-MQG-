@@ -1,1 +1,37 @@
+import random
+import time
+print('Welcome to the MQG! (Motivational Quote Generator)')
+for attempt in range(2):
+    print('Please Enter "quote" To Randomly Generate a Motivational Quote')
 
+    if input() == 'quote':
+        print('Please Wait As We Generate Your Quote')
+        print('----------GENERATING----------')
+        time.sleep(3)
+        print('----------FINISHED----------')
+        num = random.randint(1, 10)
+
+        if num == 1:
+            print('“Your future isn’t waiting for you — it’s waiting for you to start.”')
+        elif num == 2:
+            print('“Small steps count. The only step that doesn’t is the one you never take.”')
+        elif num == 3:
+            print('“Discipline beats motivation every single day.”')
+        elif num == 4:
+            print('“You don’t need to be perfect, just persistent.”')
+        elif num == 5:
+            print('“Your potential is louder than your excuses.”')
+        elif num == 6:
+            print('“Every expert was once a beginner who refused to quit.”')
+        elif num == 7:
+            print('“If you want a different tomorrow, do something different today.”')
+        elif num == 8:
+            print('“Courage isn’t the absence of fear — it’s moving anyway.”')
+        elif num == 9:
+            print('“You’re capable of more than you’ve ever allowed yourself to believe.”')
+        elif num == 10:
+            print('“Success is built in the quiet moments when no one is watching.”')
+        print('If you would like to read another quote, please follow the instructions below! If there are not any instructions below, then please exit the tab. Thank You!')
+    else:
+        print("You didn't type quote.")
+        print('Please try again.')
